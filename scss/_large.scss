@@ -1,0 +1,95 @@
+header, nav, main {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+#hamburgerBtn {
+    display: none;
+}
+.moveOver>.content {
+    transform: transtlateX(0px);
+}
+nav {
+    background-color: transparent;
+    position: static;
+    transform: translateX(0);
+    width: auto;
+    ul {
+        display: flex;
+        margin-left: $gutter;
+        //border-left: 1-x solid rgba(0,0,0,0.2);
+    }
+    ul li a {
+        padding: .6rem  1.5rem;
+        border: none;
+        //border-right: 1px solid rgba(0,0,0,0.2);
+    }
+}
+#navWrapper {
+    background-color: #f7f7f7f7;
+}
+#cards {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+  }
+  
+  #cards section {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+  }
+  
+  #cards section div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #cards section div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  #cards section div h2,
+  #cards section div address,
+  #cards section div a {
+  }
+  
+  #cards section div a {
+    text-decoration: none;
+  }
+  
+  #cards section div a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media query for larger screens */
+  @media screen and (min-width: 768px) {
+    #cards {
+      grid-template-columns: 1fr 1fr; 
+      margin: 1rem;
+    }
+  
+    #cards section {
+      flex-direction: row; 
+      align-items: center; 
+      margin: 0;
+      
+    }
+  
+    #cards section div:first-child {
+      flex: 1; 
+    }
+  
+    #cards section div:last-child {
+      flex: 2;
+    }
+  
+    #cards section div img {
+      max-width: 100%; 
+      height: auto;
+    }
+  }
+  

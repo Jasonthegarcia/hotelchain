@@ -1,0 +1,41 @@
+/* NAVIGATION STUFF GOES HERE  */
+#cards {
+  section {
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    grid-template-areas:
+      "photo name"
+      "photo address"
+      "photo phone";
+    column-gap: 16px; 
+    align-items: center; 
+    margin: 1rem;
+  }
+
+  img {
+    grid-area: photo; 
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+  }
+
+  h2 {
+    grid-area: name;
+    margin: 0; 
+  }
+
+  address {
+    grid-area: address;
+    margin: 0;
+  }
+
+  a {
+    grid-area: phone;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
